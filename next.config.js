@@ -85,7 +85,7 @@ const nextConfig = {
     ignoreDuringBuilds: true
   },
   output: process.env.EXPORT ? 'export' : process.env.NEXT_BUILD_STANDALONE === 'true' ? 'standalone' : undefined,
-  staticPageGenerationTimeout: 3600,
+  staticPageGenerationTimeout: 120,
   // 多语言， 在export时禁用
   i18n: process.env.EXPORT
     ? undefined
